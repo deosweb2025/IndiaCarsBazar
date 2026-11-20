@@ -97,31 +97,8 @@ export const Hero: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 flex-1 flex flex-col justify-center min-h-[460px] sm:min-h-[500px] lg:h-screen lg:max-h-[920px] pt-4 sm:pt-6 pb-12 sm:pb-16 lg:py-0">
         <div className="max-w-2xl">
           <div className="w-full">
-            {/* Desktop Slide Dots (Hidden on mobile as they are on stage) */}
-            <div className="hidden lg:flex items-center gap-2 mb-3">
-              <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/35 bg-amber-400/15 backdrop-blur-md px-3.5 py-1 text-[11px] font-black uppercase tracking-widest text-amber-300 shadow-md shadow-black/40">
-                <Sparkles className="h-3.5 w-3.5 text-amber-400 animate-pulse" />
-                <span>{slide.badge}</span>
-              </div>
-
-              <div className="flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/10 ml-2">
-                {slides.map((s, idx) => (
-                  <button
-                    key={s.id}
-                    onClick={() => setCurrentSlide(idx)}
-                    className={`transition-all duration-300 rounded-full ${
-                      idx === currentSlide
-                        ? 'w-6 h-1.5 bg-gradient-to-r from-amber-400 to-yellow-300 shadow-sm shadow-amber-400/50'
-                        : 'w-1.5 h-1.5 bg-zinc-600 hover:bg-zinc-400'
-                    }`}
-                    aria-label={`Slide ${idx + 1}`}
-                  />
-                ))}
-              </div>
-            </div>
-
-            {/* Mobile-Only Eyebrow Badge */}
-            <div className="lg:hidden inline-flex items-center gap-2 rounded-full border border-amber-400/35 bg-amber-400/15 backdrop-blur-md px-3.5 py-1 text-[11px] font-black uppercase tracking-widest text-amber-300 mb-2.5 shadow-md shadow-black/40">
+            {/* Eyebrow Badge with Warm Gold Accent */}
+            <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/35 bg-amber-400/15 backdrop-blur-md px-3.5 py-1 text-[11px] font-black uppercase tracking-widest text-amber-300 mb-2.5 sm:mb-3 shadow-md shadow-black/40">
               <Sparkles className="h-3.5 w-3.5 text-amber-400 animate-pulse" />
               <span>{slide.badge}</span>
             </div>
