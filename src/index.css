@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+:root {
+  /* Ultra-Luxury Automotive Palette - Neutral Carbon & Warm Champagne Gold */
+  --color-carbon-dark: #0a0b0d;
+  /* Deep neutral carbon black (no blue undertones) */
+  --color-carbon-surface: #121316;
+  /* Sleek graphite surface */
+  --color-carbon-card: #18191d;
+  /* Elevated carbon card */
+  --color-carbon-border: #26272e;
+  /* Subtle carbon edge */
+
+  --color-gold-light: #fef08a;
+  /* Champagne light */
+  --color-gold-primary: #f59e0b;
+  /* Warm radiant gold */
+  --color-gold-deep: #d97706;
+  /* Deep metallic gold */
+  --color-gold-hover: #eab308;
+
+  --color-light-canvas: #f9f9fb;
+  /* Pure luxury pearl canvas */
+  --color-light-card: #ffffff;
+  /* Pure white surface */
+  --color-light-border: #e4e4e7;
+  /* Crisp light neutral border */
+
+  --color-text-dark: #0f1012;
+  /* High-contrast neutral text on light */
+  --color-text-muted: #52525b;
+  /* Elegant gray body */
+  --color-text-light: #f4f4f5;
+  /* Crisp text on carbon */
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f9f9fb;
+  color: #18181b;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  border: none;
+}
+
+/* Custom scrollbar - Carbon & Gold */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0b0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 5px;
+  border: 2px solid #0a0b0d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
+
+/* Glassmorphism helpers */
+.glass-carbon {
+  background: rgba(18, 19, 22, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-pearl {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(228, 228, 231, 0.9);
+}
+
+.gold-gradient-btn {
+  background: linear-gradient(135deg, #f59e0b 0%, #eab308 50%, #d97706 100%);
+}
+
+.gold-gradient-btn:hover {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #b45309 100%);
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.35);
+}
+
+.gold-glow:hover {
+  box-shadow: 0 0 35px rgba(245, 158, 11, 0.55);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fef08a 0%, #fbbf24 35%, #f59e0b 70%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Luxury Orbiting Border Beam Animation */
+@keyframes border-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-border-rotate {
+  animation: border-rotate 4s linear infinite;
+}
+
+/* Luxury Orbiting Border Beam Animation */
+@keyframes border-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-border-rotate {
+  animation: border-rotate 4s linear infinite;
+}

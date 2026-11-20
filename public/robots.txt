@@ -1,0 +1,6 @@
+# robots.txt for Indiacarbazar
+User-agent: *
+Allow: /
+
+# Sitemap (domain-agnostic relative path)
+Sitemap: /sitemap.xml
