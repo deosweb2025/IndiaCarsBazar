@@ -32,66 +32,42 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
   void _texture;
   return (
     <div className="relative overflow-hidden pt-28 pb-24 md:pt-36 md:pb-32 bg-[#0a0b0d]">
-      {/* 1. PHOTOREALISTIC BESPOKE BACKGROUND IMAGE LAYER */}
+      {/* 1. CRYSTAL CLEAR FULL PHOTOREALISTIC BACKGROUND IMAGE - ZERO SHADES */}
       {bgImage && (
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <img
             src={bgImage}
             alt={title}
-            className="h-full w-full object-cover object-right md:object-center brightness-[0.88] contrast-[1.05]"
+            className="h-full w-full object-cover object-center brightness-100 contrast-100"
             loading="eager"
           />
-          {/* Subtle bottom fade to blend with lower border */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0b0d] via-transparent to-transparent opacity-80" />
-          {/* Focused left-hand reading vignette (leaves the right 55-60% clear to see the vehicle/showroom) */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0b0d] via-[#0a0b0d]/75 to-transparent max-w-2xl sm:max-w-3xl" />
         </div>
       )}
 
-      {/* 2. BESPOKE VELVET LUXURY AMBIENT LIGHTING & GOLDEN GLOW (Zero noisy grid/hex textures) */}
-      <div className="absolute inset-0 pointer-events-none z-[1]">
-        {/* Animated Horizontal Golden Light Sweep Beam across top boundary */}
-        <motion.div
-          animate={{ x: ['-100%', '200%'] }}
-          transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
-          className="absolute top-0 left-0 w-1/3 h-[2px] bg-gradient-to-r from-transparent via-amber-400/80 to-transparent"
-        />
-
-        {/* Ambient Warm Golden Sheen */}
-        <div className="absolute -top-24 left-1/4 h-80 w-96 rounded-full bg-amber-500/12 blur-[100px]" />
-        <div className="absolute top-1/2 right-10 h-72 w-72 rounded-full bg-yellow-400/10 blur-[90px]" />
-      </div>
-
-      {/* 3. WARM GOLDEN AMBIENT SPOTLIGHT GLOWS */}
-      <div className="pointer-events-none absolute inset-0 z-[2]">
-        <div className="absolute top-0 left-1/3 -translate-x-1/2 h-[350px] w-[600px] rounded-full bg-amber-500/15 blur-3xl opacity-70" />
-        <div className="absolute -top-20 right-10 h-72 w-72 rounded-full bg-yellow-500/10 blur-3xl" />
-      </div>
-
-      {/* 4. MAIN CONTENT */}
+      {/* 2. MAIN CONTENT (With Self-Contained High-Contrast Text Shadows - No Shading Over Image) */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-        {/* Breadcrumb Navigation */}
+        {/* Breadcrumb Navigation - Compact Glass Pill */}
         <motion.nav
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="flex items-center gap-2 text-xs sm:text-sm text-zinc-400 mb-5 flex-wrap"
+          className="inline-flex items-center gap-2 text-xs sm:text-sm text-zinc-100 mb-5 flex-wrap rounded-full bg-black/45 backdrop-blur-md px-3.5 py-1.5 border border-white/15 shadow-lg"
           aria-label="Breadcrumb"
         >
           <Link
             to="/"
-            className="flex items-center gap-1.5 hover:text-amber-400 transition-colors font-semibold"
+            className="flex items-center gap-1.5 hover:text-amber-400 transition-colors font-semibold text-zinc-200"
           >
             <Home className="h-3.5 w-3.5 text-amber-400" />
             <span>Home</span>
           </Link>
           {breadcrumbs.map((crumb, idx) => (
             <React.Fragment key={idx}>
-              <ChevronRight className="h-3.5 w-3.5 text-zinc-600" />
+              <ChevronRight className="h-3.5 w-3.5 text-zinc-400" />
               {crumb.href ? (
                 <Link
                   to={crumb.href}
-                  className="hover:text-amber-400 transition-colors font-medium text-zinc-300"
+                  className="hover:text-amber-400 transition-colors font-medium text-zinc-200"
                 >
                   {crumb.label}
                 </Link>
@@ -111,7 +87,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.1 }}
-              className="inline-flex items-center gap-2 rounded-full border border-amber-400/35 bg-amber-400/15 backdrop-blur-md px-3.5 py-1 text-[11px] font-black tracking-wider uppercase text-amber-300 mb-3 shadow-md"
+              className="inline-flex items-center gap-2 rounded-full border border-amber-400/50 bg-black/45 backdrop-blur-md px-3.5 py-1 text-[11px] font-black tracking-wider uppercase text-amber-300 mb-3 shadow-lg"
             >
               <span className="h-2 w-2 rounded-full bg-amber-400 animate-pulse" />
               {badge}
@@ -122,11 +98,11 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.15 }}
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-white mb-3 leading-[1.18]"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-white mb-3 leading-[1.18] drop-shadow-[0_2px_16px_rgba(0,0,0,0.95)] drop-shadow-[0_4px_24px_rgba(0,0,0,0.85)]"
           >
             {title}{' '}
             {highlight && (
-              <span className="bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-500 bg-clip-text text-transparent drop-shadow-[0_2px_16px_rgba(0,0,0,0.95)] drop-shadow-[0_2px_20px_rgba(245,158,11,0.6)]">
                 {highlight}
               </span>
             )}
@@ -137,14 +113,14 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="h-1.5 w-20 rounded-full my-3.5 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-600 shadow-sm shadow-amber-500/30 origin-left"
+            className="h-1.5 w-20 rounded-full my-3.5 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-600 shadow-md shadow-black/60 origin-left"
           />
 
           <motion.p
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.25 }}
-            className="text-sm sm:text-base md:text-lg text-zinc-200 leading-relaxed font-normal max-w-2xl drop-shadow-sm"
+            className="text-sm sm:text-base md:text-lg text-white font-medium leading-relaxed max-w-2xl drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)] drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)]"
           >
             {description}
           </motion.p>

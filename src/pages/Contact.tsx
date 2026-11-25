@@ -128,11 +128,11 @@ export const Contact: React.FC = () => {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-zinc-950/90 backdrop-blur-md border border-amber-400/40 text-amber-300 font-black text-xs uppercase tracking-widest shadow-lg shadow-black/5 mb-4"
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-amber-400/20 backdrop-blur-md border border-amber-400/50 text-amber-900 font-black text-xs uppercase tracking-widest shadow-xs mb-4"
             >
-              <Sparkles className="h-4 w-4 text-amber-400 animate-pulse" />
+              <Sparkles className="h-4 w-4 text-amber-600 animate-pulse" />
               <span>Direct Concierge Desk</span>
-              <ShieldCheck className="h-4 w-4 text-emerald-400 ml-0.5" />
+              <ShieldCheck className="h-4 w-4 text-emerald-600 ml-0.5" />
             </motion.div>
 
             <motion.h2
@@ -472,9 +472,9 @@ export const Contact: React.FC = () => {
                   href="https://maps.google.com/?q=Kolkata+West+Bengal+India"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl bg-zinc-950 text-white px-5 py-2.5 text-xs font-bold hover:bg-zinc-800 transition-colors shadow-md"
+                  className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 text-neutral-950 font-black px-5 py-2.5 text-xs shadow-md shadow-amber-500/20 hover:scale-[1.02] transition-all"
                 >
-                  <ExternalLink className="h-3.5 w-3.5 text-amber-400" />
+                  <ExternalLink className="h-3.5 w-3.5 text-neutral-950" />
                   <span>Open in Google Maps</span>
                 </a>
               </div>
@@ -490,12 +490,12 @@ export const Contact: React.FC = () => {
                 />
 
                 {/* Floating Glassmorphic Badge */}
-                <div className="absolute bottom-4 left-4 rounded-xl bg-zinc-950/95 backdrop-blur-md border border-amber-400/40 p-3.5 shadow-2xl text-white">
-                  <div className="text-xs font-black text-white flex items-center gap-1.5">
-                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <div className="absolute bottom-4 left-4 rounded-xl bg-white/95 backdrop-blur-md border border-amber-300 p-3.5 shadow-xl text-zinc-900">
+                  <div className="text-xs font-black text-zinc-950 flex items-center gap-1.5">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                     <span>Indiacarbazar Hub Floor</span>
                   </div>
-                  <div className="text-[11px] text-amber-400 font-extrabold mt-0.5">
+                  <div className="text-[11px] text-amber-700 font-extrabold mt-0.5">
                     Helpline: 9073344500
                   </div>
                 </div>

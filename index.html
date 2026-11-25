@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/images/logo-official.png" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/images/logo-official.png" />
+  <link rel="shortcut icon" href="/images/logo-official.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Indiacarbazar | Best Second Hand Cars in Kolkata & Certified Pre-Owned Dealership</title>
   <meta name="description"
@@ -22,6 +25,8 @@
     content="Buy and sell verified pre-owned cars in Kolkata with complete RTO paperwork, instant car loans, and insurance renewal under one roof." />
   <meta property="og:site_name" content="Indiacarbazar" />
   <meta property="og:locale" content="en_IN" />
+  <meta property="og:image" content="/images/logo-official.png" />
+  <meta property="og:image:alt" content="India Car Bazaar Official Logo" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -29,6 +34,7 @@
     content="Indiacarbazar | Best Second Hand Cars in Kolkata & Certified Pre-Owned Dealership" />
   <meta name="twitter:description"
     content="Buy and sell verified pre-owned cars in Kolkata with complete RTO paperwork, instant car loans, and insurance renewal under one roof." />
+  <meta name="twitter:image" content="/images/logo-official.png" />
 
   <!-- Structured Data: AutoDealer / LocalBusiness Schema -->
   <script type="application/ld+json">
@@ -37,7 +43,8 @@
       "@type": "AutoDealer",
       "name": "Indiacarbazar",
       "alternateName": "India Car Bazar Kolkata",
-      "logo": "/favicon.svg",
+      "logo": "https://indiacarbazar.com/images/logo-official.png",
+      "image": "https://indiacarbazar.com/images/logo-official.png",
       "telephone": "+91-9073344500",
       "priceRange": "₹₹₹",
       "address": {
@@ -72,8 +79,23 @@
 </head>
 
 <body
-  class="bg-[#0a0b0d] text-neutral-900 antialiased selection:bg-amber-400 selection:text-neutral-950 min-h-screen overflow-x-hidden">
-  <div id="root"></div>
+  class="bg-[#fbf9f5] text-neutral-900 antialiased selection:bg-amber-400 selection:text-neutral-950 min-h-screen overflow-x-hidden">
+  <div id="root">
+    <!-- Initial Brand Showcase Loader while React initializes -->
+    <div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #fbf9f5; font-family: 'Plus Jakarta Sans', system-ui, sans-serif;">
+      <div style="background: #ffffff; padding: 14px 28px; border-radius: 20px; border: 1px solid rgba(245, 158, 11, 0.4); box-shadow: 0 15px 35px rgba(245, 158, 11, 0.12); display: flex; align-items: center; justify-content: center;">
+        <img src="/images/logo-official.png" alt="India Car Bazaar" style="height: 56px; width: auto; object-fit: contain;" />
+      </div>
+      <div style="margin-top: 18px; display: flex; align-items: center; gap: 8px;">
+        <div style="width: 8px; height: 8px; border-radius: 50%; background: #f59e0b;"></div>
+        <span style="font-size: 13px; font-weight: 800; color: #92400e; letter-spacing: 0.05em; text-transform: uppercase;">
+          India Car Bazaar
+        </span>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
   <script type="module" src="/src/main.tsx"></script>
 </body>
 

@@ -78,12 +78,12 @@ export const ServiceDetail: React.FC = () => {
                   alt={service.title}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0b0d]/60 via-transparent to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white">
-                  <span className="rounded-full bg-[#121317]/90 backdrop-blur-md border border-[#272832] px-3.5 py-1 text-xs font-bold text-white">
+                <div className="absolute inset-0 bg-gradient-to-t from-amber-950/10 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between text-zinc-900">
+                  <span className="rounded-full bg-white/95 backdrop-blur-md border border-amber-300 px-3.5 py-1 text-xs font-bold text-amber-900 shadow-sm">
                     {service.badge}
                   </span>
-                  <span className="text-xs font-bold text-zinc-200 bg-[#121317]/80 backdrop-blur-md px-3 py-1 rounded-md">
+                  <span className="text-xs font-bold text-zinc-900 bg-white/95 backdrop-blur-md border border-amber-200/80 px-3 py-1 rounded-md shadow-sm">
                     Helpline: {siteData.company.helpline}
                   </span>
                 </div>
@@ -207,15 +207,15 @@ export const ServiceDetail: React.FC = () => {
 
             {/* Right Sidebar: Direct Booking & Helpline Card (4 cols) */}
             <div className="lg:col-span-4 sticky top-28 space-y-6">
-              {/* Direct Call Card in Neutral Carbon (#0e0f13) */}
-              <div className="rounded-3xl bg-[#0e0f13] text-white p-6 sm:p-8 shadow-2xl text-center relative overflow-hidden border border-[#23242c]">
-                <span className="inline-block text-[10px] font-black uppercase tracking-widest text-amber-400 mb-2">
+              {/* Direct Call Card in Luxury Warm Gold Frame */}
+              <div className="rounded-3xl bg-gradient-to-br from-amber-50 via-white to-amber-50/80 text-zinc-900 p-6 sm:p-8 shadow-xl text-center relative overflow-hidden border border-amber-300">
+                <span className="inline-block text-[10px] font-black uppercase tracking-widest text-amber-800 mb-2">
                   Need Immediate Help?
                 </span>
-                <h3 className="text-xl font-extrabold text-white mb-2">
+                <h3 className="text-xl font-extrabold text-zinc-950 mb-2">
                   Speak Directly With Our Lead Advisor
                 </h3>
-                <p className="text-xs text-zinc-300 mb-6 font-light">
+                <p className="text-xs text-zinc-600 mb-6 font-normal">
                   Get real-time guidance on {service.title} right now.
                 </p>
 

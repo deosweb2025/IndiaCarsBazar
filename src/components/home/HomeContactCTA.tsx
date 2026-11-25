@@ -107,11 +107,11 @@ export const HomeContactCTA: React.FC = () => {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-zinc-950/90 backdrop-blur-md border border-amber-400/40 text-amber-300 font-black text-xs uppercase tracking-widest shadow-lg shadow-black/5 mb-4"
+            className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-amber-400/20 backdrop-blur-md border border-amber-400/50 text-amber-900 font-black text-xs uppercase tracking-widest shadow-xs mb-4"
           >
-            <Sparkles className="h-4 w-4 text-amber-400 animate-pulse" />
+            <Sparkles className="h-4 w-4 text-amber-600 animate-pulse" />
             <span>Direct Contact &amp; Helpline</span>
-            <ShieldCheck className="h-4 w-4 text-emerald-400 ml-0.5" />
+            <ShieldCheck className="h-4 w-4 text-emerald-600 ml-0.5" />
           </motion.div>
 
           <motion.h2

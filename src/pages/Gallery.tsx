@@ -130,11 +130,11 @@ export const Gallery: React.FC = () => {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-zinc-950/90 backdrop-blur-md border border-amber-400/40 text-amber-300 font-black text-xs uppercase tracking-widest shadow-lg shadow-black/5 mb-4"
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-amber-400/20 backdrop-blur-md border border-amber-400/50 text-amber-900 font-black text-xs uppercase tracking-widest shadow-xs mb-4"
             >
-              <Sparkles className="h-4 w-4 text-amber-400 animate-pulse" />
+              <Sparkles className="h-4 w-4 text-amber-600 animate-pulse" />
               <span>Verified Automotive Portfolio</span>
-              <ShieldCheck className="h-4 w-4 text-emerald-400 ml-0.5" />
+              <ShieldCheck className="h-4 w-4 text-emerald-600 ml-0.5" />
             </motion.div>
 
             <motion.h2
@@ -203,8 +203,8 @@ export const Gallery: React.FC = () => {
                       <div className="relative h-60 sm:h-64 w-full rounded-2xl overflow-hidden mb-5 bg-gradient-to-b from-zinc-50 via-zinc-100/90 to-zinc-200/70 border border-zinc-200/80 flex items-center justify-center">
                         {/* Top-Left Category Badge */}
                         <div className="absolute top-3.5 left-3.5 z-20">
-                          <span className="inline-flex items-center gap-1.5 rounded-full bg-zinc-950/85 backdrop-blur-md px-3.5 py-1 text-xs font-bold text-amber-300 border border-amber-400/30 shadow-md">
-                            <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
+                          <span className="inline-flex items-center gap-1.5 rounded-full bg-white/95 backdrop-blur-md px-3.5 py-1 text-xs font-bold text-amber-900 border border-amber-300 shadow-sm">
+                            <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
                             {item.category}
                           </span>
                         </div>
@@ -217,11 +217,11 @@ export const Gallery: React.FC = () => {
                         </div>
 
                         {/* Bottom Quick Lightbox Bar */}
-                        <div className="absolute bottom-2.5 inset-x-2.5 px-3.5 py-1.5 rounded-xl bg-zinc-950/85 backdrop-blur-md border border-amber-400/30 flex items-center justify-between text-white shadow-lg z-20">
-                          <span className="text-[11px] font-semibold text-zinc-300 flex items-center gap-1.5">
-                            <span className="text-amber-400">⚡</span> Instant Box Screen
+                        <div className="absolute bottom-2.5 inset-x-2.5 px-3.5 py-1.5 rounded-xl bg-white/95 backdrop-blur-md border border-amber-200/80 flex items-center justify-between text-zinc-900 shadow-md z-20">
+                          <span className="text-[11px] font-semibold text-zinc-700 flex items-center gap-1.5">
+                            <span className="text-amber-600">⚡</span> Instant Box Screen
                           </span>
-                          <span className="text-amber-400 text-xs font-black group-hover:translate-x-0.5 transition-transform flex items-center gap-1">
+                          <span className="text-amber-700 text-xs font-black group-hover:translate-x-0.5 transition-transform flex items-center gap-1">
                             Inspect Full Screen ↗
                           </span>
                         </div>

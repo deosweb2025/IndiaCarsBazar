@@ -136,11 +136,11 @@ export const Services: React.FC = () => {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-zinc-950/90 backdrop-blur-md border border-amber-400/40 text-amber-300 font-black text-xs uppercase tracking-widest shadow-lg shadow-black/5 mb-4"
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-amber-400/20 backdrop-blur-md border border-amber-400/50 text-amber-900 font-black text-xs uppercase tracking-widest shadow-xs mb-4"
             >
-              <Sparkles className="h-4 w-4 text-amber-400 animate-pulse" />
+              <Sparkles className="h-4 w-4 text-amber-600 animate-pulse" />
               <span>Tailored Solutions</span>
-              <ShieldCheck className="h-4 w-4 text-emerald-400 ml-0.5" />
+              <ShieldCheck className="h-4 w-4 text-emerald-600 ml-0.5" />
             </motion.div>
 
             <motion.h2
@@ -210,8 +210,8 @@ export const Services: React.FC = () => {
                       </div>
 
                       {/* Floating Badge (Top-Right) */}
-                      <div className="absolute top-3.5 right-3.5 z-20 px-3 py-1 rounded-full bg-zinc-950/85 backdrop-blur-md border border-amber-400/35 text-xs font-bold text-amber-300 shadow-md flex items-center gap-1.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
+                      <div className="absolute top-3.5 right-3.5 z-20 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md border border-amber-300 text-xs font-bold text-amber-900 shadow-md flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
                         {service.badge}
                       </div>
 
@@ -223,11 +223,11 @@ export const Services: React.FC = () => {
                       />
 
                       {/* Bottom Instant Box Screen Trigger Pill */}
-                      <div className="absolute bottom-2.5 inset-x-2.5 px-3.5 py-1.5 rounded-xl bg-zinc-950/85 backdrop-blur-md border border-amber-400/30 flex items-center justify-between text-white shadow-lg z-20">
-                        <span className="text-[11px] font-semibold text-zinc-300 flex items-center gap-1.5">
-                          <span className="text-amber-400">⚡</span> Instant Box Screen
+                      <div className="absolute bottom-2.5 inset-x-2.5 px-3.5 py-1.5 rounded-xl bg-white/95 backdrop-blur-md border border-amber-200/80 flex items-center justify-between text-zinc-900 shadow-md z-20">
+                        <span className="text-[11px] font-semibold text-zinc-700 flex items-center gap-1.5">
+                          <span className="text-amber-600">⚡</span> Instant Box Screen
                         </span>
-                        <span className="text-amber-400 text-xs font-black group-hover:translate-x-0.5 transition-transform flex items-center gap-1">
+                        <span className="text-amber-700 text-xs font-black group-hover:translate-x-0.5 transition-transform flex items-center gap-1">
                           View Details ↗
                         </span>
                       </div>

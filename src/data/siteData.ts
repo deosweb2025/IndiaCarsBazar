@@ -43,9 +43,9 @@ export interface HeroSlide {
 
 export const siteData = {
   company: {
-    name: "Indiacarbazar",
-    legalName: "Indiacarbazar Motors & Services",
-    brandShort: "India Car Bazar",
+    name: "India Car Bazaar",
+    legalName: "India Car Bazaar Motors & Services",
+    brandShort: "India Car Bazaar",
     domain: "www.indiacarbazar.com",
     url: "https://www.indiacarbazar.com",
     tagline: "The Best Way for Selling & Buying an Used Car",
@@ -405,6 +405,22 @@ export const siteData = {
 
   // GALLERY - Exclusively using real dealership inventory, showroom & deliveries from public/images/fleet
   gallery: [
+    {
+      id: "gal-delivery-real",
+      title: "Official Family Key Handover Ceremony",
+      category: "Key Deliveries",
+      imageUrl: "/images/fleet/delivery-key-handover.jpg",
+      caption: "Proud family receiving the keys to their certified pre-owned car with verified legal documents, RTO ownership transfer, and full warranty at India Car Bazaar.",
+      featured: true
+    },
+    {
+      id: "gal-delivery-gift",
+      title: "Customer Milestone Celebration",
+      category: "Key Deliveries",
+      imageUrl: "/images/fleet/delivery-gift.jpg",
+      caption: "Special milestone celebration with customer and family receiving sweets and key delivery pack at India Car Bazaar.",
+      featured: true
+    },
     {
       id: "gal-1",
       title: "Maruti Suzuki XL7 Alpha Hybrid MPV",

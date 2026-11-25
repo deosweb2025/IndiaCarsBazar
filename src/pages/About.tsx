@@ -113,11 +113,11 @@ export const About: React.FC = () => {
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-950/90 backdrop-blur-md border border-amber-400/40 text-amber-300 font-black text-xs uppercase tracking-widest shadow-md mb-4"
+                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/20 backdrop-blur-md border border-amber-400/50 text-amber-900 font-black text-xs uppercase tracking-widest shadow-xs mb-4"
               >
-                <Sparkles className="h-4 w-4 text-amber-400 animate-pulse" />
+                <Sparkles className="h-4 w-4 text-amber-600 animate-pulse" />
                 <span>Our Foundation &amp; Vision</span>
-                <ShieldCheck className="h-4 w-4 text-emerald-400 ml-0.5" />
+                <ShieldCheck className="h-4 w-4 text-emerald-600 ml-0.5" />
               </motion.div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-zinc-950 mb-3 leading-tight tracking-tight">
@@ -197,8 +197,8 @@ export const About: React.FC = () => {
                         Official Dealership Floor
                       </h3>
                     </div>
-                    <span className="rounded-full bg-zinc-950/85 backdrop-blur-md border border-amber-400/35 px-3.5 py-1 text-xs font-bold text-amber-300 flex items-center gap-1.5 shadow-sm">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    <span className="rounded-full bg-white/95 backdrop-blur-md border border-amber-300 px-3.5 py-1 text-xs font-bold text-amber-900 flex items-center gap-1.5 shadow-sm">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                       <span>Kolkata Floor</span>
                     </span>
                   </div>
@@ -210,12 +210,12 @@ export const About: React.FC = () => {
                       alt="Indiacarbazar Certified Pre-Owned Multi-Brand Fleet"
                       className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute bottom-2.5 inset-x-2.5 px-3 py-1.5 rounded-xl bg-zinc-950/85 backdrop-blur-md border border-amber-400/30 flex items-center justify-between text-white text-[11px] font-medium shadow-md">
-                      <span className="text-zinc-300 flex items-center gap-1.5">
-                        <ShieldCheck className="h-3.5 w-3.5 text-amber-400" />
+                    <div className="absolute bottom-2.5 inset-x-2.5 px-3 py-1.5 rounded-xl bg-white/95 backdrop-blur-md border border-amber-200/80 flex items-center justify-between text-zinc-900 text-[11px] font-medium shadow-md">
+                      <span className="text-zinc-700 flex items-center gap-1.5">
+                        <ShieldCheck className="h-3.5 w-3.5 text-amber-600" />
                         <span>100% Physical Floor Inspection</span>
                       </span>
-                      <span className="text-amber-400 font-bold">Verified Fleet</span>
+                      <span className="text-amber-700 font-bold">Verified Fleet</span>
                     </div>
                   </div>
 
@@ -265,11 +265,11 @@ export const About: React.FC = () => {
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-zinc-950/90 backdrop-blur-md border border-amber-400/40 text-amber-300 font-black text-xs uppercase tracking-widest shadow-lg shadow-black/5 mb-4"
+                className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-amber-400/20 backdrop-blur-md border border-amber-400/50 text-amber-900 font-black text-xs uppercase tracking-widest shadow-xs mb-4"
               >
-                <Sparkles className="h-4 w-4 text-amber-400 animate-pulse" />
+                <Sparkles className="h-4 w-4 text-amber-600 animate-pulse" />
                 <span>Our Operating Standards</span>
-                <ShieldCheck className="h-4 w-4 text-emerald-400 ml-0.5" />
+                <ShieldCheck className="h-4 w-4 text-emerald-600 ml-0.5" />
               </motion.div>
 
               <motion.h2

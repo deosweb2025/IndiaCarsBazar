@@ -42,9 +42,9 @@ export const Button: React.FC<ButtonProps> = ({
     // Luxury Champagne Gold & Amber Primary
     primary:
       'bg-gradient-to-r from-amber-400 via-amber-500 to-yellow-500 hover:from-yellow-300 hover:via-amber-400 hover:to-amber-500 text-neutral-950 font-black shadow-lg shadow-amber-500/25 border border-yellow-300/40 active:scale-[0.98]',
-    // Neutral Carbon Graphite Secondary
+    // Crisp White & Neutral Secondary with Subtle Amber Accent
     secondary:
-      'bg-[#16171b] hover:bg-[#22232a] text-white border border-[#2e2f38] shadow-md hover:border-amber-500/40 active:scale-[0.98]',
+      'bg-white hover:bg-amber-50/70 text-zinc-900 border border-zinc-200 hover:border-amber-400 font-bold shadow-xs active:scale-[0.98]',
     outline:
       'bg-transparent hover:bg-amber-500/10 text-amber-500 border-2 border-amber-500 hover:border-amber-400 active:scale-[0.98]',
     glow:

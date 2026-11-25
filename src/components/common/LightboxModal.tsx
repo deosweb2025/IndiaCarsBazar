@@ -75,28 +75,28 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.92, y: 20 }}
           transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-          className="relative z-10 flex flex-col max-h-[92vh] max-w-5xl w-full overflow-hidden rounded-3xl border border-amber-400/30 bg-[#121317] shadow-2xl shadow-black/90"
+          className="relative z-10 flex flex-col max-h-[92vh] max-w-5xl w-full overflow-hidden rounded-3xl border border-amber-300 bg-white shadow-2xl shadow-zinc-950/30"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Top Header Bar */}
-          <div className="flex items-center justify-between border-b border-[#23242c] px-5 py-3.5 bg-[#0e0f13]">
+          <div className="flex items-center justify-between border-b border-zinc-200 px-5 py-3.5 bg-stone-50">
             <div className="flex items-center gap-3">
-              <span className="rounded-full bg-amber-400/20 px-3 py-1 text-xs font-bold text-amber-300 border border-amber-400/35">
+              <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-black text-amber-900 border border-amber-300/80">
                 {item.category}
               </span>
-              <h3 className="text-sm sm:text-base font-bold text-white truncate max-w-xs sm:max-w-md">
+              <h3 className="text-sm sm:text-base font-bold text-zinc-950 truncate max-w-xs sm:max-w-md">
                 {item.title}
               </h3>
             </div>
 
             <div className="flex items-center gap-2">
-              <span className="text-xs text-zinc-400 hidden sm:inline">
+              <span className="text-xs text-zinc-500 hidden sm:inline">
                 {currentIndex + 1} of {items.length}
               </span>
               <button
                 type="button"
                 onClick={onClose}
-                className="rounded-lg p-1.5 text-zinc-400 hover:text-white hover:bg-[#202127] transition-colors cursor-pointer"
+                className="rounded-lg p-1.5 text-zinc-600 hover:text-zinc-950 hover:bg-zinc-200 transition-colors cursor-pointer"
                 aria-label="Close image preview"
               >
                 <X className="h-5 w-5" />
@@ -118,7 +118,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
                 <button
                   type="button"
                   onClick={handlePrev}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-[#18191f]/90 p-2 sm:p-3 text-zinc-200 hover:text-amber-400 hover:bg-[#23242a] border border-[#2e2f38] shadow-lg backdrop-blur-sm transition-all cursor-pointer"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-white/95 p-2 sm:p-3 text-zinc-800 hover:text-amber-700 hover:bg-amber-50 border border-zinc-200 shadow-md backdrop-blur-sm transition-all cursor-pointer"
                   aria-label="Previous image"
                 >
                   <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
@@ -126,7 +126,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
                 <button
                   type="button"
                   onClick={handleNext}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-[#18191f]/90 p-2 sm:p-3 text-zinc-200 hover:text-amber-400 hover:bg-[#23242a] border border-[#2e2f38] shadow-lg backdrop-blur-sm transition-all cursor-pointer"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-white/95 p-2 sm:p-3 text-zinc-800 hover:text-amber-700 hover:bg-amber-50 border border-zinc-200 shadow-md backdrop-blur-sm transition-all cursor-pointer"
                   aria-label="Next image"
                 >
                   <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
@@ -136,8 +136,8 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
           </div>
 
           {/* Bottom Caption & Action */}
-          <div className="border-t border-[#23242c] bg-[#0e0f13] p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-            <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed max-w-2xl font-light">
+          <div className="border-t border-zinc-200 bg-stone-50 p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+            <p className="text-xs sm:text-sm text-zinc-700 leading-relaxed max-w-2xl font-normal">
               {item.caption}
             </p>
             <div className="flex items-center gap-2 self-end sm:self-center">
@@ -145,7 +145,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
                 href={item.imageUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-lg border border-zinc-700 bg-[#1e1f26] px-3 py-1.5 text-xs font-bold text-zinc-200 hover:border-amber-400/50 hover:text-amber-300 transition-colors"
+                className="inline-flex items-center gap-1.5 rounded-lg border border-zinc-300 bg-white px-3 py-1.5 text-xs font-bold text-zinc-800 hover:border-amber-400 hover:text-amber-700 shadow-xs transition-colors"
               >
                 <ZoomIn className="h-3.5 w-3.5" />
                 <span>Full Resolution</span>

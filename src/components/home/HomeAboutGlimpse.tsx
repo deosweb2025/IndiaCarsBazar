@@ -88,7 +88,7 @@ export const HomeAboutGlimpse: React.FC = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
+
           {/* LEFT COLUMN: BESPOKE TWO-IMAGE COMPOSED LUXURY SHOWCASE */}
           <motion.div
             initial={{ opacity: 0, x: -35 }}
@@ -99,34 +99,34 @@ export const HomeAboutGlimpse: React.FC = () => {
           >
             {/* CARD 1: PRIMARY SHOWROOM & CERTIFIED VEHICLE SHOWCASE */}
             <div className="relative w-[88%] sm:w-[84%] rounded-[2.25rem] p-3 sm:p-3.5 bg-gradient-to-br from-amber-400/40 via-amber-200/25 to-yellow-500/35 border border-amber-300/60 shadow-[0_25px_65px_-15px_rgba(217,119,6,0.22)]">
-              <div className="relative rounded-[1.75rem] overflow-hidden aspect-[4/3] bg-[#0c0d11] group shadow-inner">
+              <div className="relative rounded-[1.75rem] overflow-hidden aspect-[4/3] bg-white group shadow-inner">
                 <img
                   src="/images/about-showcase-1.jpg"
                   alt="Indiacarbazar Certified Luxury Showroom & Multi-Brand Fleet"
-                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 brightness-[0.98] contrast-[1.05]"
+                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 brightness-[1.0] contrast-[1.02]"
                   loading="lazy"
                 />
 
-                {/* Subtle Cinematic Vignette */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+                {/* Subtle Daylight Ambient Vignette */}
+                <div className="absolute inset-0 bg-gradient-to-t from-amber-950/10 via-transparent to-transparent pointer-events-none" />
 
                 {/* Floating Glassmorphic Pill: Certified Multi-Brand Fleet */}
                 <motion.div
                   animate={{ y: [-3, 3, -3] }}
                   transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                  className="absolute top-3 left-3 z-10 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/75 backdrop-blur-md border border-amber-400/40 text-amber-300 text-xs font-black shadow-lg"
+                  className="absolute top-3 left-3 z-10 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-amber-300 text-amber-900 text-xs font-black shadow-md"
                 >
-                  <Sparkles className="h-3.5 w-3.5 text-amber-400 animate-pulse" />
+                  <Sparkles className="h-3.5 w-3.5 text-amber-600 animate-pulse" />
                   <span>Certified Multi-Brand Fleet</span>
                 </motion.div>
 
                 {/* Embedded Showroom Bar at Bottom */}
-                <div className="absolute bottom-3 left-3 right-3 p-3 sm:p-3.5 rounded-xl bg-[#121318]/90 backdrop-blur-md border border-amber-400/25 flex items-center justify-between text-white shadow-xl">
+                <div className="absolute bottom-3 left-3 right-3 p-3 sm:p-3.5 rounded-xl bg-white/95 backdrop-blur-md border border-amber-200/80 flex items-center justify-between text-zinc-900 shadow-xl">
                   <div>
-                    <span className="text-[10px] font-black uppercase tracking-widest text-amber-400 block mb-0.5">
+                    <span className="text-[10px] font-black uppercase tracking-widest text-amber-700 block mb-0.5">
                       Showroom Floor • Kolkata
                     </span>
-                    <div className="text-xs sm:text-sm font-extrabold text-white tracking-tight">
+                    <div className="text-xs sm:text-sm font-extrabold text-zinc-950 tracking-tight">
                       Indiacarbazar Motors & Services
                     </div>
                   </div>
@@ -141,33 +141,33 @@ export const HomeAboutGlimpse: React.FC = () => {
             <motion.div
               animate={{ y: [0, -7, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-              className="absolute -bottom-4 right-0 sm:bottom-0 sm:right-2 w-[58%] sm:w-[54%] rounded-[1.75rem] p-2.5 sm:p-3 bg-gradient-to-tl from-amber-500/40 via-zinc-900/90 to-amber-400/40 border border-amber-400/50 shadow-[0_25px_60px_rgba(0,0,0,0.35)] z-20"
+              className="absolute -bottom-4 right-0 sm:bottom-0 sm:right-2 w-[58%] sm:w-[54%] rounded-[1.75rem] p-2.5 sm:p-3 bg-gradient-to-tl from-amber-400/40 via-white to-amber-300/40 border border-amber-300 shadow-[0_20px_50px_rgba(217,119,6,0.18)] z-20"
             >
-              <div className="relative rounded-[1.25rem] overflow-hidden aspect-[4/3] bg-[#0c0d11] group shadow-inner">
+              <div className="relative rounded-[1.25rem] overflow-hidden aspect-[4/3] bg-white group shadow-inner">
                 <img
                   src="/images/about-showcase-2.jpg"
                   alt="Indiacarbazar 150+ Point Vehicle Diagnostic Inspection & Certified Fleet"
-                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 brightness-[1.0] contrast-[1.05]"
+                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 brightness-[1.0] contrast-[1.02]"
                   loading="lazy"
                 />
 
-                {/* Cinematic Vignette */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+                {/* Soft Daylight Ambient Vignette */}
+                <div className="absolute inset-0 bg-gradient-to-t from-amber-950/10 via-transparent to-transparent pointer-events-none" />
 
                 {/* Overlapping Badge: 150+ Inspected Fleet */}
-                <div className="absolute top-2.5 right-2.5 z-10 flex items-center gap-1 px-2.5 py-1 rounded-full bg-black/75 backdrop-blur-md border border-amber-400/40 text-[10px] font-black text-amber-300 shadow-md">
-                  <SearchCheck className="h-3 w-3 text-amber-400" />
+                <div className="absolute top-2.5 right-2.5 z-10 flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-md border border-amber-300 text-[10px] font-black text-amber-900 shadow-sm">
+                  <SearchCheck className="h-3 w-3 text-amber-600" />
                   <span>150+ Inspected Fleet</span>
                 </div>
 
                 {/* Bottom Assurance Strip */}
-                <div className="absolute bottom-2.5 left-2.5 right-2.5 p-2 rounded-lg bg-black/80 backdrop-blur-md border border-white/10 flex items-center gap-2">
-                  <div className="flex h-6 w-6 items-center justify-center rounded-md bg-amber-400/20 text-amber-400 shrink-0">
+                <div className="absolute bottom-2.5 left-2.5 right-2.5 p-2 rounded-lg bg-white/95 backdrop-blur-md border border-amber-200/80 flex items-center gap-2">
+                  <div className="flex h-6 w-6 items-center justify-center rounded-md bg-amber-100 text-amber-800 shrink-0">
                     <ShieldCheck className="h-3.5 w-3.5" />
                   </div>
                   <div className="truncate">
-                    <div className="text-[10px] font-black text-white leading-tight">100% RTO Assured</div>
-                    <div className="text-[9px] text-zinc-400 truncate">Legal Transfer & NOC</div>
+                    <div className="text-[10px] font-black text-zinc-950 leading-tight">100% RTO Assured</div>
+                    <div className="text-[9px] text-zinc-600 truncate">Legal Transfer & NOC</div>
                   </div>
                 </div>
               </div>
@@ -186,7 +186,7 @@ export const HomeAboutGlimpse: React.FC = () => {
 
           {/* RIGHT COLUMN: REFINED EDITORIAL & VALUE GRID */}
           <div className="lg:col-span-6 flex flex-col items-start pt-6 lg:pt-0">
-            
+
             {/* Eyebrow Badge */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}

@@ -121,12 +121,12 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
           onClick={(e) => e.stopPropagation()}
         >
           {/* 1. Modal Top Banner Header - Luxury Dual-Pane Showcase (Unobstructed Car View) */}
-          <div className="relative w-full shrink-0 overflow-hidden bg-[#0d0e13] border-b border-amber-500/20">
+          <div className="relative w-full shrink-0 overflow-hidden bg-gradient-to-r from-amber-50 via-stone-50 to-amber-50/60 border-b border-amber-200/80">
             {/* Close Button at top-right (high z-index) */}
             <button
               type="button"
               onClick={onClose}
-              className="absolute top-4 right-4 z-30 flex h-10 w-10 items-center justify-center rounded-full bg-[#181a22]/90 text-zinc-300 hover:text-white hover:bg-neutral-900 border border-zinc-700/80 shadow-xl hover:scale-105 active:scale-95 transition-all cursor-pointer"
+              className="absolute top-4 right-4 z-30 flex h-10 w-10 items-center justify-center rounded-full bg-white/95 text-zinc-700 hover:text-zinc-950 hover:bg-stone-100 border border-zinc-200 shadow-md hover:scale-105 active:scale-95 transition-all cursor-pointer"
               aria-label="Close modal"
             >
               <X className="h-5 w-5" />
@@ -138,42 +138,42 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
               <div className="p-6 sm:p-7 md:p-8 flex flex-col justify-center md:col-span-6 lg:col-span-5 relative z-10 order-2 md:order-1">
                 {/* Badges Bar */}
                 <div className="flex items-center gap-2.5 mb-3 flex-wrap">
-                  <span className="rounded-full bg-amber-400/15 border border-amber-400/40 px-3 py-1 text-xs font-black uppercase tracking-wider text-amber-300 shadow-sm">
+                  <span className="rounded-full bg-amber-100 border border-amber-300 px-3 py-1 text-xs font-black uppercase tracking-wider text-amber-900 shadow-xs">
                     {service.badge}
                   </span>
-                  <div className="flex items-center gap-1.5 text-xs font-semibold text-zinc-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
-                    <Phone className="h-3 w-3 text-amber-400" />
+                  <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-800 bg-white border border-amber-200/80 px-2.5 py-1 rounded-full shadow-xs">
+                    <Phone className="h-3 w-3 text-amber-600" />
                     <span>9073344500</span>
                   </div>
                 </div>
 
                 {/* Title & Icon Header */}
                 <div className="flex items-start gap-3.5 mb-3">
-                  <div className="flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-xl bg-gradient-to-br from-amber-400 to-yellow-500 text-neutral-950 shadow-lg shadow-amber-500/30 shrink-0 mt-0.5">
+                  <div className="flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-xl bg-gradient-to-br from-amber-400 to-yellow-500 text-neutral-950 shadow-md shadow-amber-500/25 shrink-0 mt-0.5">
                     {getServiceIcon(service.iconName)}
                   </div>
                   <div>
-                    <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-white leading-tight">
+                    <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-zinc-950 leading-tight">
                       {service.title}
                     </h2>
-                    <span className="text-[11px] font-bold uppercase tracking-widest text-amber-400/90 block mt-1">
+                    <span className="text-[11px] font-bold uppercase tracking-widest text-amber-700 block mt-1">
                       Indiacarbazar Certified Service
                     </span>
                   </div>
                 </div>
 
                 {/* Short Description */}
-                <p className="text-xs sm:text-sm text-zinc-300 font-normal leading-relaxed mb-4">
+                <p className="text-xs sm:text-sm text-zinc-700 font-normal leading-relaxed mb-4">
                   {service.shortDesc}
                 </p>
 
                 {/* Trust Mini Pills */}
-                <div className="flex items-center gap-2 flex-wrap text-[11px] font-semibold text-zinc-400">
-                  <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 text-zinc-300">
-                    <Sparkles className="h-3 w-3 text-amber-400" /> 100% Legal Indemnity
+                <div className="flex items-center gap-2 flex-wrap text-[11px] font-semibold text-zinc-600">
+                  <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white border border-amber-200/80 text-zinc-800 shadow-xs">
+                    <Sparkles className="h-3 w-3 text-amber-600" /> 100% Legal Indemnity
                   </span>
-                  <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 text-zinc-300">
-                    <ShieldCheck className="h-3 w-3 text-amber-400" /> 150+ Inspection
+                  <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white border border-amber-200/80 text-zinc-800 shadow-xs">
+                    <ShieldCheck className="h-3 w-3 text-amber-600" /> 150+ Inspection
                   </span>
                 </div>
               </div>
@@ -188,7 +188,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
                 />
 
                 {/* Floating Model Badge in corner */}
-                <div className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-zinc-950/85 backdrop-blur-md border border-amber-400/40 text-[11px] font-bold text-amber-300 shadow-lg">
+                <div className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md border border-amber-300 text-[11px] font-bold text-amber-900 shadow-md">
                   Certified Fleet Vehicle
                 </div>
               </div>
@@ -306,18 +306,18 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
             </div>
 
             {/* Quick Inquiry Form */}
-            <div className="rounded-2xl bg-[#0e0f13] text-white p-5 sm:p-6 shadow-xl border border-[#23242c]">
-              <h3 className="text-base sm:text-lg font-black text-white mb-1">
+            <div className="rounded-2xl bg-gradient-to-br from-amber-50/70 via-stone-50 to-amber-50/50 text-zinc-900 p-5 sm:p-6 shadow-sm border border-amber-200/80">
+              <h3 className="text-base sm:text-lg font-black text-zinc-950 mb-1">
                 Instant Inquiry for {service.title}
               </h3>
-              <p className="text-xs text-zinc-400 mb-4 font-light">
+              <p className="text-xs text-zinc-600 mb-4 font-normal">
                 Fill in your details and connect immediately with our senior coordinator on WhatsApp or Phone:
               </p>
 
               {isSubmitted ? (
                 <div className="p-4 rounded-xl border border-green-500/30 bg-green-500/10 text-center">
-                  <CheckCircle2 className="h-8 w-8 text-green-400 mx-auto mb-1.5" />
-                  <p className="text-xs text-white font-bold">
+                  <CheckCircle2 className="h-8 w-8 text-green-600 mx-auto mb-1.5" />
+                  <p className="text-xs text-zinc-950 font-bold">
                     WhatsApp has opened with your inquiry! Our executive is ready at 9073344500.
                   </p>
                 </div>
@@ -325,7 +325,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
                 <form onSubmit={handleInquiry} className="space-y-3">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div>
-                      <label className="block text-[11px] font-bold text-zinc-300 mb-1 uppercase tracking-wider">
+                      <label className="block text-[11px] font-bold text-zinc-700 mb-1 uppercase tracking-wider">
                         Your Name *
                       </label>
                       <input
@@ -334,11 +334,11 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
                         placeholder="e.g. Rahul Sharma"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full rounded-xl border border-[#2e2f3b] bg-[#16171d] px-3.5 py-2 text-xs sm:text-sm text-white placeholder-zinc-500 focus:border-amber-400 focus:outline-none"
+                        className="w-full rounded-xl border border-zinc-300 bg-white px-3.5 py-2 text-xs sm:text-sm text-zinc-950 placeholder-zinc-400 focus:border-amber-500 focus:outline-none"
                       />
                     </div>
                     <div>
-                      <label className="block text-[11px] font-bold text-zinc-300 mb-1 uppercase tracking-wider">
+                      <label className="block text-[11px] font-bold text-zinc-700 mb-1 uppercase tracking-wider">
                         Phone Number *
                       </label>
                       <input
@@ -347,12 +347,12 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
                         placeholder="e.g. 98765 43210"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full rounded-xl border border-[#2e2f3b] bg-[#16171d] px-3.5 py-2 text-xs sm:text-sm text-white placeholder-zinc-500 focus:border-amber-400 focus:outline-none"
+                        className="w-full rounded-xl border border-zinc-300 bg-white px-3.5 py-2 text-xs sm:text-sm text-zinc-950 placeholder-zinc-400 focus:border-amber-500 focus:outline-none"
                       />
                     </div>
                   </div>
                   <div>
-                    <label className="block text-[11px] font-bold text-zinc-300 mb-1 uppercase tracking-wider">
+                    <label className="block text-[11px] font-bold text-zinc-700 mb-1 uppercase tracking-wider">
                       Specific Notes / Requirements (Optional)
                     </label>
                     <input
@@ -360,12 +360,12 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
                       placeholder="e.g. Car model, RTO location, loan amount needed..."
                       value={formData.notes}
                       onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                      className="w-full rounded-xl border border-[#2e2f3b] bg-[#16171d] px-3.5 py-2 text-xs sm:text-sm text-white placeholder-zinc-500 focus:border-amber-400 focus:outline-none"
+                      className="w-full rounded-xl border border-zinc-300 bg-white px-3.5 py-2 text-xs sm:text-sm text-zinc-950 placeholder-zinc-400 focus:border-amber-500 focus:outline-none"
                     />
                   </div>
                   <button
                     type="submit"
-                    className="w-full flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 py-3 px-4 text-neutral-950 font-black text-xs sm:text-sm shadow-lg shadow-amber-500/20 hover:scale-[1.01] active:scale-[0.99] transition-transform cursor-pointer"
+                    className="w-full flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 py-3 px-4 text-neutral-950 font-black text-xs sm:text-sm shadow-md shadow-amber-500/20 hover:scale-[1.01] active:scale-[0.99] transition-transform cursor-pointer"
                   >
                     <Send className="h-4 w-4" />
                     <span>Submit &amp; Connect on WhatsApp</span>
@@ -380,9 +380,9 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
             <div className="flex items-center gap-2">
               <a
                 href={`tel:${siteData.company.helpline}`}
-                className="inline-flex items-center gap-2 rounded-xl bg-[#0e0f13] hover:bg-neutral-900 text-amber-400 border border-zinc-700/80 px-4 py-2 text-xs sm:text-sm font-bold shadow-sm transition-all"
+                className="inline-flex items-center gap-2 rounded-xl bg-white hover:bg-amber-50 text-amber-900 border border-amber-300 px-4 py-2 text-xs sm:text-sm font-bold shadow-xs transition-all"
               >
-                <Phone className="h-4 w-4" />
+                <Phone className="h-4 w-4 text-amber-600" />
                 <span>Call {siteData.company.helpline}</span>
               </a>
               <button

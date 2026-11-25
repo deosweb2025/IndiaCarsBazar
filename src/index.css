@@ -59,19 +59,19 @@ body {
   border: none;
 }
 
-/* Custom scrollbar - Carbon & Gold */
+/* Custom scrollbar - Pearl & Gold */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0b0d;
+  background: #f4f4f7;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #27272a;
+  background: #d4d4d8;
   border-radius: 5px;
-  border: 2px solid #0a0b0d;
+  border: 2px solid #f4f4f7;
 }
 
 ::-webkit-scrollbar-thumb:hover {
